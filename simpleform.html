@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple Form</title>
+    <style>
+        .wufoo {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Order Form</h1>
-    <form>
+    <form method="get" action="simpleform.html" class="wufoo">
+        <h2>Order Form</h2>
         <h3>What would you like to buy?</h3>
-            <input type="text">
         <select>
-            <option></option>
-            <option></option>
-            <option>a</option>
+            <option>A</option>
+            <option>B (+  0.5$)</option>
+            <option>C (+  0.5$)</option>
         </select>
         <h3>How many would you line to order?</h3>
             <input type="radio" name="amount" value="1 - $10"><b>1 - $10</b><br>
             <input type="radio" name="amount" value="2 - $20"><b>2 - $20</b><br>
             <input type="radio" name="amount" value="3 - $30"><b>3 - $30</b><br>
-        <h3>Name *</h3>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
+        <h3>Name <span style="color: red" >*</span></h3>
+            <input type="text" placeholder="First Name" size="15px">
+            <input type="text" placeholder="Last Name"size="15px">
         <h3>Email</h3>
         <input type="text" size="50px">
         <h3>Phone Number</h3>
